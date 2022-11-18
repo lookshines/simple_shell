@@ -1,19 +1,4 @@
-
-#define CONVERT_UNSIGNED	2
-
-/* 1 if using system getline() */
-#define USE_GETLINE 0
-#define USE_STRTOK 0
-
-#define HIST_FILE	".simple_shell_history"
-#define HIST_MAX	4096
-
-extern char **environ;
-
-
-/**
- *  * struct liststr - singly linked list
- *   * @num: the num#ifndef _SHELL_H_
+#ifndef _SHELL_H_
 #define _SHELL_H_
 
 #include <stdio.h>
@@ -39,7 +24,22 @@ extern char **environ;
 #define CMD_CHAIN	3
 
 /* for convert_number() */
-#define CONVERT_LOWERCASE	1ber field
+#define CONVERT_LOWERCASE	1
+#define CONVERT_UNSIGNED	2
+
+/* 1 if using system getline() */
+#define USE_GETLINE 0
+#define USE_STRTOK 0
+
+#define HIST_FILE	".simple_shell_history"
+#define HIST_MAX	4096
+
+extern char **environ;
+
+
+/**
+ * struct liststr - singly linked list
+ * @num: the number field
  * @str: a string
  * @next: points to the next node
  */
